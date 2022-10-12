@@ -1,0 +1,166 @@
+body
+{
+  background-color:rgb(255, 215, 215);
+}
+
+.intro h1
+{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 204, 196, 0.8);
+  border:2px solid tomato;
+}
+
+p
+{
+  background-color: pink;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+.container
+{
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+.column
+{
+  display: inline-block;
+  width: 48%;
+}
+
+.col-30
+{
+  width: 29%;
+}
+
+.col-30 img
+{
+  border: 5px solid pink;
+}
+
+.col-70
+{
+  width: 69%;
+}
+
+.col-70 p
+{
+  font-family: Garamond
+}
+
+.col1
+{
+  background-color: pink;
+}
+
+.col1 img
+{
+  background-color:rgb(169, 195, 255);
+  border: 5px solid rgb(114, 168, 255);
+}
+
+.col2
+{
+  border: 5px solid black;
+}
+
+.col2 img
+{
+  height: 61%;
+  width: 61%;
+  background-color: rgb(255, 169, 169);
+  border: 5px solid rgb(255, 114, 114);
+}
+
+.col1 h1
+{
+  color: black;
+}
+
+.hero
+{
+  height: 100vh;
+  background-color: red;
+  background-image: url("background image for website.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("background image for website.jpg") no-repeat cover;
+  position: relative;
+}
+
+.intro
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px)
+{
+  .column 
+  {
+    display: block;
+    width: 100%;
+  }
+}
+
+.content h2 
+{
+  color: tomato;
+}
+
+.no-list
+{
+  list-style: none;
+}
+
+.nav-items li, .inline-block
+{
+  display: inline-block;
+}
+
+.nav-items
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-items img
+{
+  border: 5px solid tomato;
+}
+
+.nav-items li:hover
+{
+  background-color: red;
+}
+
+button 
+{
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgba(255, 204, 196, 0.8);
+  border: 1px solid rgb(255, 181, 169);
+  transition: all .3s;
+  box-shadow: 6px 6px 12px rgb(255, 185, 172),
+              -6px -6px 12px #ffd7d7;
+ }
+ 
+ button:hover 
+ {
+  border: 1px solid tomato;
+ }
+ 
+ button:active 
+ {
+  box-shadow: 4px 4px 12px tomato,
+              -4px -4px 12px rgb(255, 135, 114);
+ }
